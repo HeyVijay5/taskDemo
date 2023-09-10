@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <title>HTML Table</title>
+  </head>
+  <body>
+    <form method="" action="">
+      <table border="1" align="center" width="660" bgcolor="#CCCCCC">
+        <caption>
+          Registration form
+        </caption>
+        <tr>
+          <th>First name</th>
+          <td>
+            <input
+              type="text"
+              name="fn"
+              id="fn1"
+              maxlength="19"
+              title="enter your first name"
+              placeholder="enter your first name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Last name</th>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td><input type="email" /></td>
+        </tr>
+        <tr>
+          <th>Password</th>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <th>ReEnter Password</th>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>
+            male<input type="radio" name="g" value="m" /> female<input
+              type="radio"
+              name="g"
+              value="f"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <th>PhoneNumber</th>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <td><textarea rows="8" cols="40"></textarea></td>
+        </tr>
+
+        <tr>
+          <th>State</th>
+          <td>
+            <textarea name="State"> </textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Country</th>
+          <td>
+            <select name="country">
+              <option value="" selected="selected" disabled="disabled">
+                Select your country
+              </option>
+              <option value="1">India</option>
+              <option value="2">Pakistan</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Languages known</th>
+          <td>
+            <label></label>
+            <input type="checkbox" id="english" class="form-checkbox" /> English
+            <input type="checkbox" id="kannada" class="form-checkbox" /> Kannada
+            <input type="checkbox" id="hindi" class="form-checkbox" /> Hindi
+            <input type="checkbox" id="telugu" class="form-checkbox" />
+            Telugu<br />
+          </td>
+        </tr>
+
+        <th align="center">
+          <label>
+            <input type="checkbox" checked /> Hereby I declare all the given
+            details are true
+          </label>
+          <br />
+        </th>
+        <th>
+          <p align="right">
+            <a href="https://www.ethnus.com">Log in to Ethnus website</a>
+          </p>
+        </th>
+        <tr>
+          <button>
+            <td colspan="2" align="center">
+              <input type="Register" value="Register" />
+            </td>
+          </button>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

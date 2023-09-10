@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .nav-box {
+        width: 400px;
+        background-color: #f1f1f1;
+        padding: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      li {
+        padding: 8px;
+        background-color: #f1f1f1;
+        color: blue;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      li:first-child {
+        background-color: grey;
+        color: white;
+        padding: 8px 16px;
+      }
+
+      li:not(:first-child)::before {
+        content: "|";
+        padding: 0 8px;
+        color: blue;
+      }
+
+      li a {
+        color: blue;
+        text-decoration: none;
+      }
+
+      /* Change the box color and text color on hover */
+      li:hover {
+        background-color: grey;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Horizontal Navigation Bar</h2>
+
+    <div class="nav-box">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">Java</a></li>
+        <li><a href="#contact">HTML</a></li>
+        <li><a href="#about">CSS</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

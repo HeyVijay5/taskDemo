@@ -1,11 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=>, initial-scale=1.0" />
-    <title>Document</title>
+    <style>
+      .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+      .form-title {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .form-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .form-row {
+        border-bottom: 1px solid #ccc;
+      }
+
+      .form-cell {
+        padding: 10px;
+        text-align: right;
+        font-weight: bold;
+      }
+
+      .data-cell {
+        text-align: left;
+      }
+
+      .form-field {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: transparent;
+      }
+
+      .save-button {
+        background-color: transparent;
+        color: black;
+        border: 2px solid gold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
   </head>
   <body>
-    <h1>task 4</h1>
+    <div class="form-container">
+      <h2 class="form-title">Registration Form</h2>
+      <form action="#" method="post">
+        <table class="form-table">
+          <tr class="form-row">
+            <td class="form-cell">Full Name:</td>
+            <td class="data-cell">
+              <input
+                type="text"
+                id="full-name"
+                class="form-field"
+                value="Vincent Maveric"
+                readonly
+              />
+            </td>
+          </tr>
+          <tr class="form-row">
+            <td class="form-cell">Username:</td>
+            <td class="data-cell">
+              <input
+                type="text"
+                id="username"
+                class="form-field"
+                value="vinz"
+                readonly
+              />
+            </td>
+          </tr>
+          <tr class="form-row">
+            <td class="form-cell">Password:</td>
+            <td class="data-cell">
+              <input
+                type="password"
+                id="password"
+                class="form-field"
+                value="HiddenPassword"
+                readonly
+              />
+            </td>
+          </tr>
+
+          <tr class="form-row">
+            <td class="form-cell">Reset Password:</td>
+            <td class="data-cell">
+              <input
+                type="password"
+                id="reset-password"
+                class="form-field"
+                value="HiddenPassword"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr class="form-row">
+            <td class="form-cell">Address:</td>
+            <td class="data-cell">
+              <input
+                type="text"
+                id="address"
+                class="form-field"
+                value="Cebu, Philippines"
+                readonly
+              />
+            </td>
+          </tr>
+          <tr class="form-row">
+            <td class="form-cell">Age:</td>
+            <td class="data-cell">
+              <input
+                type="text"
+                id="age"
+                class="form-field"
+                value="22"
+                readonly
+              />
+            </td>
+          </tr>
+
+          <tr class="form-row">
+            <td class="form-cell">Gender:</td>
+            <td class="data-cell">
+              <select id="gender" class="form-field" readonly>
+                <option value="Male;Female " selected>Male</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+
+        <button type="submit" class="save-button" align-left>SAVE</button>
+      </form>
+    </div>
   </body>
 </html>

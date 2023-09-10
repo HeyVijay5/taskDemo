@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      
+      .container {
+        background-color: lightgray; 
+        border: 1px solid black; 
+        width: 600px; 
+        padding: 10px;
+        margin: 0 auto; 
+      }
+
+      .link-container {
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 10px; 
+      }
+
+      a {
+        color: blue;
+        text-decoration: underline; 
+        padding: 5px; 
+      }
+
+      
+      a:hover {
+        background-color: beige; 
+        color: rgb(23, 23, 241); 
+      }
+    </style>
   </head>
   <body>
-    <h1>task 3</h1>
+    <div class="container"> 
+      <p>
+        <span style="color: black">Click any of the following links</span><br />
+        <div class="link-container">
+          <a href="#">Opens in New |</a>
+          <a href="#">Opens in Self |</a>
+          <a href="#">Opens in Parent |</a>
+          <a href="#">Opens in Body |</a>
+          <a href="mailto:your@email.com">Send email</a>
+        </div>
+      </p>
+    </div>
   </body>
 </html>

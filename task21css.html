@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .nav-box {
+        width: 200px;
+        background-color: skyblue;
+        padding: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li:first-child {
+        background-color: orange;
+        color: rgb(62, 170, 197);
+        padding: 8px 16px;
+      }
+
+      li {
+        padding: 8px 16px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      li:hover {
+        background-color: orange;
+        color: white;
+        text-emphasis-color: aliceblue;
+      }
+
+      li a {
+        display: block;
+        color: darkblue;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Vertical Navigation Bar</h2>
+
+    <div class="nav-box">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">Java</a></li>
+        <li><a href="#contact">HTML</a></li>
+        <li><a href="#about">CSS</a></li>
+        <li><a href="#about">Bootstrap</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
